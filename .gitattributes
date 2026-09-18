@@ -1,0 +1,15 @@
+# Normalise everything to LF in the repository.
+#
+# Without this, a Windows clone checks out CRLF while demo-app/ in the source
+# repo holds LF, so every publish reports all five files as modified whether or
+# not anything actually changed — which hides the one change that matters.
+* text=auto eol=lf
+
+# Never let line-ending translation touch a binary. It silently corrupts them.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.ico  binary
