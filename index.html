@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- This page resembles a payroll product. It must never surface in search as if
+     it were one. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Training demo page for a Playwright workshop. Fictional data.">
+<title>Payroll Transaction list (training demo)</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='steelblue'/><rect x='3' y='4' width='10' height='2' fill='white'/><rect x='3' y='7' width='10' height='2' fill='white'/><rect x='3' y='10' width='6' height='2' fill='white'/></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="fiction-banner" role="note" data-testid="fiction-banner">
+  <strong>Fictional demo data.</strong>
+  Training page for a Playwright workshop &mdash; not a Visma product, and not a real system.
+  All names, amounts and companies are invented.
+</div>
+
+<main class="page" id="app"></main>
+
+<footer class="site-footer">
+  <span id="build-stamp" data-testid="build-stamp">build</span>
+  <span>Payroll Transaction list &mdash; workshop demo</span>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
